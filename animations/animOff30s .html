@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="generator" content="R package animation 2.4">
+	<title>animOff30s</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/scianimator.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+
+	<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="js/jquery.scianimator.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+	<div class="scianimator"><div id="animOff30s" style="display: inline-block;"></div></div>
+	<div class="scianimator" style="width: 480px; text-align: left"><pre><code class="r">## Animations generated in R version 3.1.2 (2014-10-31)
+##   using the package animation
+library(mapproj)
+library(animation)
+library(geosphere)
+library(maps)
+library(rgdal)
+library(XML)
+library(sp)
+library(ggmap)
+library(Rmisc)
+library(dplyr)
+library(pscl)
+library(lattice)
+library(lsr)
+library(car)
+library(lubridate)
+library(taRifx)
+library(plyr)
+library(RColorBrewer)
+library(MASS)
+library(boot)
+library(lme4)
+library(Matrix)
+library(ggplot2)
+startTime = offStartTime + minutes(17)
+endTime = offStartTime + minutes(55)
+time = startTime
+while (time < endTime) {
+    print(makeFrame(allOffs, time, minutes(10), "POSIXtime", 
+        myMap1))
+    time <- time + seconds(30)
+}
+## R version 3.1.2 (2014-10-31)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Other packages: mapproj 1.2-4, animation 2.4, geosphere 1.4-3, maps 3.0.0-2, rgdal 1.0-7, XML 3.98-1.3, sp 1.2-1, ggmap 2.5.2, Rmisc
+## 1.5, dplyr 0.4.3, pscl 1.4.9, lattice 0.20-33, lsr 0.5, car 2.0-25, lubridate 1.3.3, taRifx 1.0.6, plyr 1.8.3, RColorBrewer 1.1-2, MASS
+## 7.3-44, boot 1.3-17, lme4 1.1-10, Matrix 1.2-2, ggplot2 1.0.1</code></pre></div>
+	<script src="js/animOff30s.js"></script>
+<!-- highlight R code -->
+
+</body>
+</html>
